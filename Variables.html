@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /* how to declare variable
+            // scope
+            -- variablename:value;
+
+        */
+        :root {
+            --ourcolor: blue;
+            --ourborder: 3px double var(--ourcolor);
+        }
+        /*#sectionone {
+            --ourcolor: blue;
+        }*/
+        section {
+            /*border:1px solid red;*/
+            /*border: 1px solid var(--ourcolor);*/
+            border:var(--ourborder);
+            width: 400px;
+            padding: 10px;
+            margin: 10px;
+        }
+        p {
+            /*border:1px solid red;*/
+            /*border: 1px solid var(--ourcolor);*/
+            border: var(--ourborder);
+            /*color: red;*/
+            color: var(--ourcolor);
+            width: 300px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section id="sectionone">
+        <p>Para - One - section one</p>
+        <p>Para - Two - section one</p>
+    </section>
+    <section id="sectiontwo">
+        <p>Para - One - section two</p>
+        <p>Para - Two - section two</p>
+    </section>
+</body>
+</html>

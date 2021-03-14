@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        /*1- declare animation using @keyframes*/
+        @keyframes sectionanimation{
+            /*type of animation => from to or %*/
+            from {
+                background-color: yellow;
+                width: 150px;
+                height: 150px;
+            }
+            to {
+                background-color: lightpink;
+                width:400px;
+                height:400px;
+                border-radius:50%;
+            }
+        }
+        section {
+            
+            border: 1px solid black;
+            margin: auto;
+            animation: sectionanimation;
+            animation-duration:2s;
+            animation-iteration-count:infinite;
+            animation-direction:alternate-reverse;
+            /*animation-delay:5s;*/
+            
+        }
+            section:hover {
+                animation-play-state:paused;
+            }
+    </style>
+</head>
+<body>
+    <section></section>
+</body>
+</html>

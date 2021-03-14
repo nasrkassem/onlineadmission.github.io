@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        /* Ul For Links*/
+        ul{
+            display:flex;
+            justify-content:space-around;
+            align-items:center;
+            min-height:10vh;
+        }
+        a{
+            color:rgb(146, 140, 140);
+            font-weight:bold;
+            text-decoration:none;
+        }
+        a:hover{
+            color:rgb(185, 31, 16)
+        }
+        li{
+            list-style:none;
+        }
+        ul h2 {
+            color: white;
+            text-shadow: 1px 0px 1px black,0px 1px 1px darkgray;
+        }
+            ul h2:first-letter,span {
+                color: rgb(185, 31, 16);
+                text-shadow:1px 1px gray;
+                font-size:1.5rem;
+            }
+            /*Cover Style*/
+            .cover{
+                background-image:url(images/laptop_top.jpg);
+                height:90vh;
+                background-position:center;
+                background-size:cover;
+                display:flex;
+                flex-direction:column;
+                color:white;
+                align-items:center;
+                justify-content:center;
+            }
+            .cover h2{
+                text-align:center;
+                margin:30px;
+            }
+                .cover button {
+                    border: none;
+                    background: -webkit-linear-gradient(top left, rgb(103, 164, 238),rgb(156, 197, 246));
+                    padding: 1.2rem 1.5rem;
+                    border-radius: 5px;
+                    font-size:1.2rem;
+                }   
+                    .cover button:hover {
+                        background: -webkit-linear-gradient(top left,rgb(156, 197, 246), rgb(103, 164, 238));
+                    }
+
+                    /* intro part*/
+                    /* image*/
+                    .intro{
+                        display:flex;
+                        flex-wrap:wrap;
+                        margin-top:1.5rem;
+                    }
+                    
+                    .intro>.intro-image{
+                        flex:1 1 23rem;
+                    }
+                        .intro > .intro-text {
+                            
+                            flex: 1 1 23rem;
+                            background-color:#f6f2f2;
+                           display:flex;
+                           flex-direction:column;
+                           justify-content:space-around;
+                           align-items:center;
+                        }
+                            .intro > .intro-text > h2 {
+                                font-family: 'Times New Roman';
+                                font-size:2.2rem;
+                                margin-top:1.2rem;
+                            }
+                            .intro > .intro-text>p{
+                                width:80%;
+                                text-align:left;
+                                margin-top:2rem;     
+                            }
+
+                            .intro > .intro-text > p>a {
+                               color:rgb(130, 124, 124);
+                            }
+
+
+
+                            .intro > .intro-image > img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                            /* Tracks Style*/
+        .tracks {
+            display: flex;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            justify-content: space-around;
+            flex-wrap:wrap;
+        }
+        .tracks>.track{
+            text-align:center;
+            box-shadow:rgb(196, 191, 191) 5px 5px 5px ;
+            margin-top:1.2rem;
+        }
+            .tracks > .track:hover {
+                box-shadow: rgb(196, 191, 191) -5px -5px 10px;
+            }
+            .tracks>.track>h3>a:hover{
+                color:blue;
+            }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <h2>Admission <span>S</span>ystem</h2>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Management</a></li>
+    </ul>
+    <div class="cover">
+        <h2>Limited Opportunities in ITI<br /> To be one of our Team</h2>
+        <button>Register Now</button>
+    </div>
+    <div class="intro">
+        <div class="intro-image">
+            <img src="images/pexels-christina-morillo-1181210.jpg" title="ITI Life"/>
+        </div>
+        <div class="intro-text">
+            <h2>Life In ITI</h2>
+            <p><a href="#">Events</a></p>
+            <p><a href="#">Hackathons</a></p>
+            <p><a href="#">Bussiness Sessions</a></p>
+            <p><a href="#">Job Fair</a></p>
+        </div>
+    </div>
+    <div class="tracks">
+        <div class="track">
+            <div class="track-image">
+                <img src="https://via.placeholder.com/250
+
+C/O https://placeholder.com/" title="IOT Track" />
+            </div>
+            <h3>For More Details Click <a href="#"> More...</a></h3>
+        </div>
+
+        <div class="track">
+            <div class="track-image">
+                <img src="https://via.placeholder.com/250
+
+C/O https://placeholder.com/" title="Python Track" />
+            </div>
+            <h3>For More Details Click <a href="#"> More...</a></h3>
+        </div>
+
+
+
+
+        <div class="track">
+            <div class="track-image">
+                <img src="https://via.placeholder.com/250
+
+C/O https://placeholder.com/" title="MEARN Track" />
+            </div>
+            <h3>For More Details Click <a href="#"> More...</a></h3>
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>
